@@ -1,9 +1,8 @@
-package com.driver.Service;
+package com.driver;
 
-import com.driver.Model.Director;
-import com.driver.Model.Movie;
-import com.driver.Repository.MovieRepository;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.driver.Director;
+import com.driver.Movie;
+import com.driver.MovieRepository;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

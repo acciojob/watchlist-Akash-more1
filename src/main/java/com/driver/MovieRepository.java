@@ -1,8 +1,7 @@
-package com.driver.Repository;
+package com.driver;
 
-import com.driver.Model.Director;
-import com.driver.Model.Movie;
-import org.springframework.beans.factory.annotation.Autowired;
+import com.driver.Director;
+import com.driver.Movie;
 import org.springframework.stereotype.Repository;
 
 import java.util.ArrayList;
