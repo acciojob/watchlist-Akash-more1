@@ -11,8 +11,13 @@ import java.util.List;
 
 @Service
 public class MovieService {
-@Autowired
-    MovieRepository movieRepository;
+//@Autowired
+MovieRepository movieRepository;
+    public MovieService() {
+        movieRepository =new MovieRepository();
+    }
+
+
 public void addMovie(Movie movie){
     movieRepository.addMovie(movie);
 }

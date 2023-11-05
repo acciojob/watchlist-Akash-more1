@@ -14,17 +14,18 @@ public class MovieRepository {
   //  @Autowired
 
 
-    HashMap<String,Movie> moviedb;
-    HashMap<String, Director> directordb;
+   private HashMap<String,Movie> moviedb;
+   private HashMap<String, Director> directordb;
 
-    HashMap<String, List<String>> dimodb;
+  private   HashMap<String, List<String>> dimodb;
 
 
 
-    public MovieRepository(HashMap<String, Movie> moviedb, HashMap<String, Director> directordb, HashMap<String, List<String>> dimodb) {
-        this.moviedb = moviedb;
-        this.directordb = directordb;
-        this.dimodb = dimodb;
+    public MovieRepository() {
+
+        this.moviedb = new HashMap<>();
+        this.directordb = new HashMap<>();
+        this.dimodb = new HashMap<>();
     }
     public void addMovie(Movie movie){
         moviedb.put(movie.getName(),movie);
